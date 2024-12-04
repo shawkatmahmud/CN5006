@@ -32,9 +32,11 @@ app.post("/addbooks", function (req, res) {
         })
         .catch((err) => {
             res.status(400).send("adding newbook failed");
-        });
-    }
+        })
+    })
+
+
     app.listen(5000, function () {
         console.log("Server is running the port 5000");
-    }));
+    });
 
